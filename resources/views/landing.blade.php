@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cycle Tech</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    @vite('resources/css/app.css')
     <style>
         .custom-navbar-bg {
             background: linear-gradient(90deg, rgba(255, 247, 255, 1) 25%,  rgba(238, 247, 234, 1) 75%);
@@ -35,15 +35,15 @@
             
             <!-- Navigation Links -->
             <ul class="hidden md:flex items-center space-x-8 font-medium text-gray-700">
-                <li><a href="#" class="hover:text-green-700">Beranda</a></li>
+                <li><a href="/landing" class="hover:text-green-700">Beranda</a></li>
                 <li><a href="#" class="hover:text-green-700">Tentang Kami</a></li>
                 <li><a href="#" class="hover:text-green-700">Kontak</a></li>
             </ul>
             
             <!-- Buttons -->
             <div class="flex items-center space-x-4">
-                <a href="#" class="border-2 border-green-700 text-green-700 py-2 px-4 rounded-lg hover:bg-green-700 hover:text-white">Masuk</a>
-                <a href="#" class="border-2 border-green-700 text-green-700 py-2 px-4 rounded-lg hover:bg-green-700 hover:text-white">Daftar</a>
+                <a href="{{ url ('/login') }}" class="border-2 border-green-700 text-green-700 py-2 px-4 rounded-lg hover:bg-green-700 hover:text-white">Masuk</a>
+                <a href="{{ url ('/signin') }}" class="border-2 border-green-700 text-green-700 py-2 px-4 rounded-lg hover:bg-green-700 hover:text-white">Daftar</a>
             </div>
         </div>
     </nav>
