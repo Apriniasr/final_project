@@ -7,11 +7,10 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     @vite('resources/css/app.css')
 </head>
-<body class="bg-green-100 min-h-screen flex flex-col">
-    <div class="flex flex-1">
+<body class="bg-green-100 flex min-h-screen">
         <!-- Left Side -->
-        <div class="w-2/3 flex items-center justify-center bg-green-200 relative">
-            <img src="recycle-symbol.png" alt="Recycle Symbol" class="w-3/4">
+        <div class="w-2/3 h-screen overflow-hidden">
+            <img src="{{ asset('images/signin.png') }}" alt="Recycle Symbol" class="object-cover w-full h-full">
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="bg-green-300 rounded-full w-16 h-16"></div>
                 <div class="bg-green-400 rounded-full w-12 h-12"></div>
@@ -21,7 +20,7 @@
         <!-- Right Side -->
         <div class="w-1/3 p-8 flex flex-col justify-center">
             <div class="text-center mb-8">
-                <img src="cycle-tech-logo.png" alt="Cycle Tech Logo" class="mx-auto mb-4">
+                <img src="{{ asset('images/logo.png') }}" alt="Cycle Tech Logo" class="mx-auto mb-4">
                 <h2 class="text-2xl font-bold">Buat Akun</h2>
                 <p class="text-gray-600">Ayo bergabung dan jadi bagian dari penyelamatan bumi!</p>
             </div>
